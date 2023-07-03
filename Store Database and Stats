@@ -1,0 +1,10 @@
+CREATE TABLE makeup (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, aisle INTEGER, color TEXT);
+
+INSERT INTO makeup VALUES (1, "Foundation",6, 18, 3, "Nude");
+INSERT INTO makeup VALUES (2, "Blush", 5, 30, 2, "Pink");
+INSERT INTO makeup VALUES (3, "Mascara", 10, 20, 4, "Black");
+
+SELECT * FROM makeup ORDER BY price;
+
+SELECT quantity, SUM(quantity) FROM MAKEUP;
+
